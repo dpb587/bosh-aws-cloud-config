@@ -1,0 +1,32 @@
+#!/bin/bash
+
+set -eu
+
+cat generator/instance_types.json \
+  | jq -c \
+    '
+      {
+        "vm_types": (
+          . | to_entries | sort | map({
+            "name": ( .key | split(".") | join("_") ),
+            "cloud_properties": (
+              {
+                "instance_type": .key
+              }
+              + (
+                if .value.instance_storage | length == 0 then
+                  {
+                    "ephemeral_disk": {
+                      "size": 16
+                    }
+                  }
+                else
+                  {}
+                end
+              )
+            )
+          })
+        )
+      }
+    ' \
+    | generator/json2yaml "vm_types.yml"

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -eu
+
+json2yaml <( cat ) \
+  | grep -v '^---$' \
+  | sed 's/^  //g' \
+  | tr '\n' '\t' | sed -E 's/(	 +\- )	 +/\1/g' | tr '\t' '\n' \
+  | sed 's/: $/:/g' \
+  > "${1:-/dev/stdout}"

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+set -eu
+
+jq -c -n \
+  --argjson vtypes '["standard","gp2"]' \
+  --argjson vsizes '[4,8,16,32,64,128,256,512,1024,2048]' \
+  '
+    {
+      "disk_types": (
+        [
+          $vtypes[] | . as $type |
+            $vsizes | map({
+              "name": ( $type + "_" + ( . | tostring ) ),
+              "disk_size": ( . * 1024 ),
+              "cloud_properties": {
+                "type": $type
+              }
+            })
+        ]
+          | flatten
+      )
+    }
+  ' \
+  | generator/json2yaml "disk_types.yml"

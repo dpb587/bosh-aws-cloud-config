@@ -1,0 +1,83 @@
+disk_types:
+  - name: "standard_4"
+    disk_size: 4096
+    cloud_properties:
+      type: "standard"
+  - name: "standard_8"
+    disk_size: 8192
+    cloud_properties:
+      type: "standard"
+  - name: "standard_16"
+    disk_size: 16384
+    cloud_properties:
+      type: "standard"
+  - name: "standard_32"
+    disk_size: 32768
+    cloud_properties:
+      type: "standard"
+  - name: "standard_64"
+    disk_size: 65536
+    cloud_properties:
+      type: "standard"
+  - name: "standard_128"
+    disk_size: 131072
+    cloud_properties:
+      type: "standard"
+  - name: "standard_256"
+    disk_size: 262144
+    cloud_properties:
+      type: "standard"
+  - name: "standard_512"
+    disk_size: 524288
+    cloud_properties:
+      type: "standard"
+  - name: "standard_1024"
+    disk_size: 1048576
+    cloud_properties:
+      type: "standard"
+  - name: "standard_2048"
+    disk_size: 2097152
+    cloud_properties:
+      type: "standard"
+  - name: "gp2_4"
+    disk_size: 4096
+    cloud_properties:
+      type: "gp2"
+  - name: "gp2_8"
+    disk_size: 8192
+    cloud_properties:
+      type: "gp2"
+  - name: "gp2_16"
+    disk_size: 16384
+    cloud_properties:
+      type: "gp2"
+  - name: "gp2_32"
+    disk_size: 32768
+    cloud_properties:
+      type: "gp2"
+  - name: "gp2_64"
+    disk_size: 65536
+    cloud_properties:
+      type: "gp2"
+  - name: "gp2_128"
+    disk_size: 131072
+    cloud_properties:
+      type: "gp2"
+  - name: "gp2_256"
+    disk_size: 262144
+    cloud_properties:
+      type: "gp2"
+  - name: "gp2_512"
+    disk_size: 524288
+    cloud_properties:
+      type: "gp2"
+  - name: "gp2_1024"
+    disk_size: 1048576
+    cloud_properties:
+      type: "gp2"
+  - name: "gp2_2048"
+    disk_size: 2097152
+    cloud_properties:
+      type: "gp2"
+
+

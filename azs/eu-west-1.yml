@@ -1,0 +1,12 @@
+azs:
+  - name: "a"
+    cloud_properties:
+      availability_zone: "eu-west-1a"
+  - name: "b"
+    cloud_properties:
+      availability_zone: "eu-west-1b"
+  - name: "c"
+    cloud_properties:
+      availability_zone: "eu-west-1c"
+
+

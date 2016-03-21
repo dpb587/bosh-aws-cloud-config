@@ -1,0 +1,50 @@
+#!/bin/bash
+
+set -eu
+
+aws ec2 describe-subnets --filter "Name=vpc-id,Values=$1" \
+  | jq \
+    '
+      {
+        "networks": (
+          [
+            {
+              "name": "eip",
+              "type": "vip"
+            }
+          ]
+          + (
+            .Subnets | map({
+              "name": (( .Tags[] // [] | select( "Name" == .Key ) | .Value | split("/") | .[-1] ) // "unknown" ),
+              "subnet": .
+            })
+              | group_by(.name)
+              | map({
+                "name": .[0].name,
+                "type": "manual",
+                "subnets": . | map(.subnet) | map(
+                  ( .CidrBlock | split("/")[0] | split(".")[0:3] | join(".") + "." ) as $network
+                  | {
+                    "range": .CidrBlock,
+                    "az": ( .AvailabilityZone|split("")[-1] ),
+                    "static": [],
+                    "gateway": ( $network + "1" ),
+                    "reserved": [
+                      $network + "2",
+                      $network + "3"
+                    ],
+                    "dns": [
+                      "169.254.169.253"
+                    ],
+                    "cloud_properties": {
+                      "subnet": .SubnetId
+                    }
+                  }
+                )
+                  | sort_by(.az)
+              })
+            )
+        )
+      }
+    ' \
+      | generator/json2yaml

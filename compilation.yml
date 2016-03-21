@@ -1,0 +1,8 @@
+compilation:
+  # @todo check az
+  az: "a"
+  # @todo check network
+  network: "private"
+  reuse_compilation_vms: false
+  vm_type: "c4_large"
+  workers: 4

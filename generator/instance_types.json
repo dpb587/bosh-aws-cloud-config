@@ -1,0 +1,430 @@
+{
+  "t1.micro": {
+    "memory": 0,
+    "instance_storage": [
+
+    ]
+  },
+  "m1.small": {
+    "memory": 0,
+    "instance_storage": [
+      160
+    ]
+  },
+  "m1.medium": {
+    "memory": 0,
+    "instance_storage": [
+      410
+    ]
+  },
+  "m1.large": {
+    "memory": 0,
+    "instance_storage": [
+      420,
+      420
+    ]
+  },
+  "m1.xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      420,
+      420,
+      420,
+      420
+    ]
+  },
+  "m3.medium": {
+    "memory": 0,
+    "instance_storage": [
+      4
+    ]
+  },
+  "m3.large": {
+    "memory": 0,
+    "instance_storage": [
+      32
+    ]
+  },
+  "m3.xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      40,
+      40
+    ]
+  },
+  "m3.2xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      80,
+      80
+    ]
+  },
+  "m4.large": {
+    "memory": 8192,
+    "instance_storage": [
+
+    ]
+  },
+  "m4.xlarge": {
+    "memory": 16384,
+    "instance_storage": [
+
+    ]
+  },
+  "m4.2xlarge": {
+    "memory": 32768,
+    "instance_storage": [
+
+    ]
+  },
+  "m4.4xlarge": {
+    "memory": 65536,
+    "instance_storage": [
+
+    ]
+  },
+  "m4.10xlarge": {
+    "memory": 163840,
+    "instance_storage": [
+
+    ]
+  },
+  "t2.nano": {
+    "memory": 512,
+    "instance_storage": [
+
+    ]
+  },
+  "t2.micro": {
+    "memory": 1024,
+    "instance_storage": [
+
+    ]
+  },
+  "t2.small": {
+    "memory": 2048,
+    "instance_storage": [
+
+    ]
+  },
+  "t2.medium": {
+    "memory": 4096,
+    "instance_storage": [
+
+    ]
+  },
+  "t2.large": {
+    "memory": 8192,
+    "instance_storage": [
+
+    ]
+  },
+  "m2.xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      420
+    ]
+  },
+  "m2.2xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      850
+    ]
+  },
+  "m2.4xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      840,
+      840
+    ]
+  },
+  "cr1.8xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      120,
+      120
+    ]
+  },
+  "i2.xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      800
+    ]
+  },
+  "i2.2xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      800,
+      800
+    ]
+  },
+  "i2.4xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      800,
+      800,
+      800,
+      800
+    ]
+  },
+  "i2.8xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      800,
+      800,
+      800,
+      800,
+      800,
+      800,
+      800,
+      800
+    ]
+  },
+  "hi1.4xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      1024,
+      1024
+    ]
+  },
+  "hs1.8xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000
+    ]
+  },
+  "c1.medium": {
+    "memory": 0,
+    "instance_storage": [
+      350
+    ]
+  },
+  "c1.xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      420,
+      420,
+      420,
+      420
+    ]
+  },
+  "c3.large": {
+    "memory": 0,
+    "instance_storage": [
+      16,
+      16
+    ]
+  },
+  "c3.xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      40,
+      40
+    ]
+  },
+  "c3.2xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      80,
+      80
+    ]
+  },
+  "c3.4xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      160,
+      160
+    ]
+  },
+  "c3.8xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      320,
+      320
+    ]
+  },
+  "c4.large": {
+    "memory": 0,
+    "instance_storage": [
+
+    ]
+  },
+  "c4.xlarge": {
+    "memory": 0,
+    "instance_storage": [
+
+    ]
+  },
+  "c4.2xlarge": {
+    "memory": 0,
+    "instance_storage": [
+
+    ]
+  },
+  "c4.4xlarge": {
+    "memory": 0,
+    "instance_storage": [
+
+    ]
+  },
+  "c4.8xlarge": {
+    "memory": 0,
+    "instance_storage": [
+
+    ]
+  },
+  "cc1.4xlarge": {
+    "memory": 0,
+    "instance_storage": [
+
+    ]
+  },
+  "cc2.8xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      840,
+      840,
+      840,
+      840
+    ]
+  },
+  "g2.2xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      60
+    ]
+  },
+  "g2.8xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      120,
+      120
+    ]
+  },
+  "cg1.4xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      840,
+      840
+    ]
+  },
+  "r3.large": {
+    "memory": 0,
+    "instance_storage": [
+      32
+    ]
+  },
+  "r3.xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      80
+    ]
+  },
+  "r3.2xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      160
+    ]
+  },
+  "r3.4xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      320
+    ]
+  },
+  "r3.8xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      320,
+      320
+    ]
+  },
+  "d2.xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      2000,
+      2000,
+      2000
+    ]
+  },
+  "d2.2xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000
+    ]
+  },
+  "d2.4xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000
+    ]
+  },
+  "d2.8xlarge": {
+    "memory": 0,
+    "instance_storage": [
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000,
+      2000
+    ]
+  }
+}

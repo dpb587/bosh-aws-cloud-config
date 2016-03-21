@@ -1,0 +1,9 @@
+azs:
+  - name: "a"
+    cloud_properties:
+      availability_zone: "ap-northeast-2a"
+  - name: "c"
+    cloud_properties:
+      availability_zone: "ap-northeast-2c"
+
+

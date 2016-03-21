@@ -1,0 +1,26 @@
+#!/bin/bash
+
+set -eu
+
+[ ! -d azs ] || rm -fr azs ; mkdir azs
+
+for name in $( aws ec2 describe-regions --query 'Regions[*].RegionName' --output text ) ; do
+  export AWS_DEFAULT_REGION="$name"
+  
+  aws ec2 describe-availability-zones \
+    | jq -c \
+      --arg name "$name" \
+      '
+        {
+          "azs": [
+            .AvailabilityZones[] | {
+              "name": ( .ZoneName|split("")[-1] ),
+              "cloud_properties": {
+                "availability_zone": .ZoneName
+              }
+            }
+          ]
+        }
+      ' \
+      | generator/json2yaml "azs/$name.yml"
+done

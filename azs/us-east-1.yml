@@ -1,0 +1,18 @@
+azs:
+  - name: "a"
+    cloud_properties:
+      availability_zone: "us-east-1a"
+  - name: "b"
+    cloud_properties:
+      availability_zone: "us-east-1b"
+  - name: "c"
+    cloud_properties:
+      availability_zone: "us-east-1c"
+  - name: "d"
+    cloud_properties:
+      availability_zone: "us-east-1d"
+  - name: "e"
+    cloud_properties:
+      availability_zone: "us-east-1e"
+
+
