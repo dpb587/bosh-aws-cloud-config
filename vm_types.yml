@@ -24,32 +24,32 @@ vm_types:
     cloud_properties:
       instance_type: "c4.2xlarge"
       ephemeral_disk:
-        size: 16
+        size: 16384
   - name: "c4_4xlarge"
     cloud_properties:
       instance_type: "c4.4xlarge"
       ephemeral_disk:
-        size: 16
+        size: 16384
   - name: "c4_8xlarge"
     cloud_properties:
       instance_type: "c4.8xlarge"
       ephemeral_disk:
-        size: 16
+        size: 16384
   - name: "c4_large"
     cloud_properties:
       instance_type: "c4.large"
       ephemeral_disk:
-        size: 16
+        size: 16384
   - name: "c4_xlarge"
     cloud_properties:
       instance_type: "c4.xlarge"
       ephemeral_disk:
-        size: 16
+        size: 16384
   - name: "cc1_4xlarge"
     cloud_properties:
       instance_type: "cc1.4xlarge"
       ephemeral_disk:
-        size: 16
+        size: 16384
   - name: "cc2_8xlarge"
     cloud_properties:
       instance_type: "cc2.8xlarge"
@@ -132,27 +132,27 @@ vm_types:
     cloud_properties:
       instance_type: "m4.10xlarge"
       ephemeral_disk:
-        size: 16
+        size: 16384
   - name: "m4_2xlarge"
     cloud_properties:
       instance_type: "m4.2xlarge"
       ephemeral_disk:
-        size: 16
+        size: 16384
   - name: "m4_4xlarge"
     cloud_properties:
       instance_type: "m4.4xlarge"
       ephemeral_disk:
-        size: 16
+        size: 16384
   - name: "m4_large"
     cloud_properties:
       instance_type: "m4.large"
       ephemeral_disk:
-        size: 16
+        size: 16384
   - name: "m4_xlarge"
     cloud_properties:
       instance_type: "m4.xlarge"
       ephemeral_disk:
-        size: 16
+        size: 16384
   - name: "r3_2xlarge"
     cloud_properties:
       instance_type: "r3.2xlarge"
@@ -172,31 +172,29 @@ vm_types:
     cloud_properties:
       instance_type: "t1.micro"
       ephemeral_disk:
-        size: 16
+        size: 16384
   - name: "t2_large"
     cloud_properties:
       instance_type: "t2.large"
       ephemeral_disk:
-        size: 16
+        size: 16384
   - name: "t2_medium"
     cloud_properties:
       instance_type: "t2.medium"
       ephemeral_disk:
-        size: 16
+        size: 16384
   - name: "t2_micro"
     cloud_properties:
       instance_type: "t2.micro"
       ephemeral_disk:
-        size: 16
+        size: 16384
   - name: "t2_nano"
     cloud_properties:
       instance_type: "t2.nano"
       ephemeral_disk:
-        size: 16
+        size: 16384
   - name: "t2_small"
     cloud_properties:
       instance_type: "t2.small"
       ephemeral_disk:
-        size: 16
-
-
+        size: 16384
